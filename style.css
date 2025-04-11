@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("wallpaper.jpeg");
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    border-radius: 12px;
+    padding: 30px 25px;
+    backdrop-filter: blur(8px);
+    border: 2px solid white;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(3, 0, 0, 0.8);
+    width: 300px;
+}
+
+.title h2 {
+    margin: 10px 0 30px;
+}
+
+.inputs {
+    position: relative;
+    margin: 25px 0;
+    border-bottom: 2px solid white;
+}
+
+.inputs input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 35px;
+    padding: 10px 35px 10px 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.inputs label {
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.inputs input:focus ~ label,
+.inputs input:not(:placeholder-shown) ~ label {
+    top: -8px;
+    left: 5px;
+    font-size: 12px;
+    background: transparent;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.checkbox {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox input {
+    transform: scale(0.8);
+    margin-right: 5px;
+}
+
+.checkbox label {
+    font-size: 15px;
+}
+
+.btn button {
+    padding: 10px 100px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background: white;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.register {
+    margin: 20px 0 30px 0;
+    font-size: 14px;
+}
+
+.register span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register span:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
